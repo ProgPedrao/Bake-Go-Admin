@@ -1,0 +1,1 @@
+ /Users/pedro/Documents/Source/Repos/04-FACULDADE/Bake-Go-Admin/.dart_tool/flutter_build/7ce2aa7d9538714c1014b1aab19e6664/native_assets.yaml: 
