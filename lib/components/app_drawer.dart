@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:shop/models/auth.dart';
-import 'package:shop/screens/orders_screen.dart';
-import 'package:shop/utils/app_routes.dart';
-import 'package:shop/utils/custom_route.dart';
+import 'package:bake_and_go_admin/models/auth.dart';
+import 'package:bake_and_go_admin/screens/orders_screen.dart';
+import 'package:bake_and_go_admin/utils/app_routes.dart';
+import 'package:bake_and_go_admin/utils/custom_route.dart';
 
 class AppDrawer extends StatelessWidget {
   const AppDrawer({super.key});

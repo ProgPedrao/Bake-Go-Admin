@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
-import 'package:shop/models/order.dart';
+import 'package:bake_and_go_admin/models/order.dart';
 
 class OrderWidget extends StatefulWidget {
   const OrderWidget({super.key, required this.order});

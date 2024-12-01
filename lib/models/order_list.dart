@@ -3,11 +3,11 @@ import 'dart:math';
 
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
-import 'package:shop/models/cart.dart';
-import 'package:shop/models/cart_item.dart';
-import 'package:shop/models/checkout.dart';
-import 'package:shop/models/order.dart';
-import 'package:shop/utils/constants.dart';
+import 'package:bake_and_go_admin/models/cart.dart';
+import 'package:bake_and_go_admin/models/cart_item.dart';
+import 'package:bake_and_go_admin/models/checkout.dart';
+import 'package:bake_and_go_admin/models/order.dart';
+import 'package:bake_and_go_admin/utils/constants.dart';
 
 class OrderList with ChangeNotifier {
 

@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:shop/errors/http_exception.dart';
-import 'package:shop/models/product.dart';
-import 'package:shop/models/product_list.dart';
-import 'package:shop/utils/app_routes.dart';
+import 'package:bake_and_go_admin/errors/http_exception.dart';
+import 'package:bake_and_go_admin/models/product.dart';
+import 'package:bake_and_go_admin/models/product_list.dart';
+import 'package:bake_and_go_admin/utils/app_routes.dart';
 
 class ProductItem extends StatelessWidget {
   const ProductItem({super.key, required this.product});

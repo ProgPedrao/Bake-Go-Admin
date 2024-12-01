@@ -5,9 +5,9 @@ import 'dart:ffi';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'package:intl/date_time_patterns.dart';
-import 'package:shop/data/store.dart';
-import 'package:shop/errors/auth_exception.dart';
-import 'package:shop/utils/constants.dart';
+import 'package:bake_and_go_admin/data/store.dart';
+import 'package:bake_and_go_admin/errors/auth_exception.dart';
+import 'package:bake_and_go_admin/utils/constants.dart';
 
 class Auth with ChangeNotifier {
   String? _token;

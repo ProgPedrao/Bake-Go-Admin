@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:shop/models/cart.dart';
-import 'package:shop/models/category.dart';
-import 'package:shop/models/category_list.dart';
-import 'package:shop/models/product.dart';
+import 'package:bake_and_go_admin/models/cart.dart';
+import 'package:bake_and_go_admin/models/category.dart';
+import 'package:bake_and_go_admin/models/category_list.dart';
+import 'package:bake_and_go_admin/models/product.dart';
 
 class ProductDetailScreen extends StatefulWidget {
   const ProductDetailScreen({super.key});

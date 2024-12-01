@@ -2,8 +2,8 @@ import 'dart:io';
 
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:shop/errors/auth_exception.dart';
-import 'package:shop/models/auth.dart';
+import 'package:bake_and_go_admin/errors/auth_exception.dart';
+import 'package:bake_and_go_admin/models/auth.dart';
 
 enum AuthMode { login, singup }
 

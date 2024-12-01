@@ -1,21 +1,21 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:shop/models/auth.dart';
-import 'package:shop/models/cart.dart';
-import 'package:shop/models/category_list.dart';
-import 'package:shop/models/order_list.dart';
-import 'package:shop/models/product_list.dart';
-import 'package:shop/screens/auth_or_home_screen.dart';
-import 'package:shop/screens/cart_screen.dart';
-import 'package:shop/screens/category_form_screen.dart';
-import 'package:shop/screens/category_screen.dart';
-import 'package:shop/screens/checkout_screen.dart';
-import 'package:shop/screens/orders_screen.dart';
-import 'package:shop/screens/product_detail_screen.dart';
-import 'package:shop/screens/product_form_screen.dart';
-import 'package:shop/screens/product_screen.dart';
-import 'package:shop/utils/app_routes.dart';
-import 'package:shop/utils/custom_route.dart';
+import 'package:bake_and_go_admin/models/auth.dart';
+import 'package:bake_and_go_admin/models/cart.dart';
+import 'package:bake_and_go_admin/models/category_list.dart';
+import 'package:bake_and_go_admin/models/order_list.dart';
+import 'package:bake_and_go_admin/models/product_list.dart';
+import 'package:bake_and_go_admin/screens/auth_or_home_screen.dart';
+import 'package:bake_and_go_admin/screens/cart_screen.dart';
+import 'package:bake_and_go_admin/screens/category_form_screen.dart';
+import 'package:bake_and_go_admin/screens/category_screen.dart';
+import 'package:bake_and_go_admin/screens/checkout_screen.dart';
+import 'package:bake_and_go_admin/screens/orders_screen.dart';
+import 'package:bake_and_go_admin/screens/product_detail_screen.dart';
+import 'package:bake_and_go_admin/screens/product_form_screen.dart';
+import 'package:bake_and_go_admin/screens/product_screen.dart';
+import 'package:bake_and_go_admin/utils/app_routes.dart';
+import 'package:bake_and_go_admin/utils/custom_route.dart';
 
 void main() {
   runApp(

@@ -4,11 +4,11 @@ import 'package:http/http.dart' as http;
 import 'package:provider/provider.dart';
 import 'dart:convert';
 
-import 'package:shop/models/auth.dart';
-import 'package:shop/models/cart.dart';
-import 'package:shop/models/checkout.dart';
-import 'package:shop/models/order_list.dart';
-import 'package:shop/utils/app_routes.dart';
+import 'package:bake_and_go_admin/models/auth.dart';
+import 'package:bake_and_go_admin/models/cart.dart';
+import 'package:bake_and_go_admin/models/checkout.dart';
+import 'package:bake_and_go_admin/models/order_list.dart';
+import 'package:bake_and_go_admin/utils/app_routes.dart';
 
 class CheckoutScreen extends StatefulWidget {
   const CheckoutScreen({super.key});

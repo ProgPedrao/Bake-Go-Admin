@@ -5,10 +5,10 @@ import 'dart:math';
 
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
-import 'package:shop/data/dummy_data.dart';
-import 'package:shop/models/product.dart';
-import 'package:shop/errors/http_exception.dart';
-import 'package:shop/utils/constants.dart';
+import 'package:bake_and_go_admin/data/dummy_data.dart';
+import 'package:bake_and_go_admin/models/product.dart';
+import 'package:bake_and_go_admin/errors/http_exception.dart';
+import 'package:bake_and_go_admin/utils/constants.dart';
 
 class ProductList with ChangeNotifier {
   final String _token;

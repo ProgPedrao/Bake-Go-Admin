@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:shop/models/auth.dart';
-import 'package:shop/models/cart.dart';
-import 'package:shop/models/product.dart';
-import 'package:shop/utils/app_routes.dart';
+import 'package:bake_and_go_admin/models/auth.dart';
+import 'package:bake_and_go_admin/models/cart.dart';
+import 'package:bake_and_go_admin/models/product.dart';
+import 'package:bake_and_go_admin/utils/app_routes.dart';
 
 class ProductGridItem extends StatelessWidget {
   const ProductGridItem({super.key});

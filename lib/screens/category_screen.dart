@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:shop/components/app_drawer.dart';
-import 'package:shop/components/category_item.dart';
-import 'package:shop/models/category_list.dart';
-import 'package:shop/utils/app_routes.dart';
+import 'package:bake_and_go_admin/components/app_drawer.dart';
+import 'package:bake_and_go_admin/components/category_item.dart';
+import 'package:bake_and_go_admin/models/category_list.dart';
+import 'package:bake_and_go_admin/utils/app_routes.dart';
 
 class CategoryScreen extends StatelessWidget {
   const CategoryScreen({super.key});

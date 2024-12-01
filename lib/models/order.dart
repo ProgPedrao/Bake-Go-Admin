@@ -1,4 +1,4 @@
-import 'package:shop/models/cart_item.dart';
+import 'package:bake_and_go_admin/models/cart_item.dart';
 
 class Order {
   final String id;

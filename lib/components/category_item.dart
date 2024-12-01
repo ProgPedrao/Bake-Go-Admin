@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:shop/errors/http_exception.dart';
-import 'package:shop/models/category.dart';
-import 'package:shop/models/category_list.dart';
-import 'package:shop/utils/app_routes.dart';
+import 'package:bake_and_go_admin/errors/http_exception.dart';
+import 'package:bake_and_go_admin/models/category.dart';
+import 'package:bake_and_go_admin/models/category_list.dart';
+import 'package:bake_and_go_admin/utils/app_routes.dart';
 
 class CategoryItem extends StatelessWidget {
   const CategoryItem({super.key, required this.category});

@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:shop/components/app_drawer.dart';
-import 'package:shop/components/product_item.dart';
-import 'package:shop/models/product_list.dart';
-import 'package:shop/utils/app_routes.dart';
+import 'package:bake_and_go_admin/components/app_drawer.dart';
+import 'package:bake_and_go_admin/components/product_item.dart';
+import 'package:bake_and_go_admin/models/product_list.dart';
+import 'package:bake_and_go_admin/utils/app_routes.dart';
 
 class ProductScreen extends StatelessWidget {
   const ProductScreen({super.key});

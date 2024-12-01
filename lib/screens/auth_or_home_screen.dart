@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:shop/models/auth.dart';
-import 'package:shop/screens/auth_screen.dart';
-import 'package:shop/screens/products_overview.dart';
+import 'package:bake_and_go_admin/models/auth.dart';
+import 'package:bake_and_go_admin/screens/auth_screen.dart';
+import 'package:bake_and_go_admin/screens/products_overview.dart';
 
 class AuthOrHomeScreen extends StatelessWidget {
   const AuthOrHomeScreen({super.key});

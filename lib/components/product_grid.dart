@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:shop/components/product_grid_item.dart';
-import 'package:shop/screens/products_overview.dart';
+import 'package:bake_and_go_admin/components/product_grid_item.dart';
+import 'package:bake_and_go_admin/screens/products_overview.dart';
 
 import '../models/product.dart';
 import '../models/product_list.dart';

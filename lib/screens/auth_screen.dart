@@ -1,7 +1,7 @@
 import 'dart:math';
 
 import 'package:flutter/material.dart';
-import 'package:shop/components/auth_form.dart';
+import 'package:bake_and_go_admin/components/auth_form.dart';
 
 class AuthScreen extends StatelessWidget {
   const AuthScreen({super.key});
