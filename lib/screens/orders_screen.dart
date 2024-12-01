@@ -12,7 +12,7 @@ class OrdersScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
-        title: const Text("Carrinho"),
+        title: const Text("Pedidos"),
       ),
       body: FutureBuilder(
         future: Provider.of<OrderList>(context, listen: false).loadOrders(),

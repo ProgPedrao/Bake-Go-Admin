@@ -1,3 +1,4 @@
+import 'package:bake_and_go_admin/screens/orders_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:bake_and_go_admin/models/auth.dart';
@@ -22,7 +23,7 @@ class AuthOrHomeScreen extends StatelessWidget {
           );
         } else {
           return auth.isAuth
-              ? const ProductsOverviewScreen()
+              ? const OrdersScreen()
               : const AuthScreen();
         }
       },

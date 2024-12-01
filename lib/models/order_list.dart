@@ -26,39 +26,56 @@ class OrderList with ChangeNotifier {
   }
 
   Future<void> loadOrders() async {
-    List<Order> items = [];
+   List<Order> items = [];
 
-    final response =
-        await http.get(Uri.parse('${Contants.ORDER_BASE_URL}/$_userId.json?auth=$_token'));
+   // Realize a requisição para obter todos os dados de pedidos no Firebase
+   final response = await http.get(
+     Uri.parse('${Contants.ORDER_BASE_URL}.json?auth=$_token'),
+   );
 
-    if (response.body == 'null') return;
+   if (response.body == 'null') return;
 
-    Map<String, dynamic> data = jsonDecode(response.body);
+   // Decodifique a resposta em um Map
+   Map<String, dynamic> data = jsonDecode(response.body);
 
-    data.forEach(
-      (orderId, orderData) {
-        items.add(
-          Order(
-            id: orderId,
-            total: orderData['total'],
-            products: (orderData['products'] as List<dynamic>)
-                .map((e) => CartItem(
-                    id: e['id'],
-                    productId: e['productId'],
-                    name: e['name'],
-                    quantity: e['quantity'],
-                    price: e['price']))
-                .toList(),
-            date: DateTime.parse(orderData['date']),
-          ),
-        );
-      },
-    );
+   // Percorra cada usuário no Map
+   data.forEach((userId, userOrders) {
+     // Certifique-se de que userOrders não é nulo
+     if (userOrders != null) {
+       // Percorra cada pedido desse usuário
+       userOrders.forEach(
+         (orderId, orderData) {
+           items.add(
+             Order(
+               id: orderId,
+               total: orderData['total'],
+               products: (orderData['products'] as List<dynamic>)
+                   .map((e) => CartItem(
+                         id: e['id'],
+                         productId: e['productId'],
+                         name: e['name'],
+                         quantity: e['quantity'],
+                         price: e['price'],
+                       ))
+                   .toList(),
+               date: DateTime.parse(orderData['date']),
+               checkout: orderData['checkout'] != null
+                  ? CheckoutData.fromJson(orderData['checkout']) // Conversão do campo
+                  : null, // Caso o campo não exista
+             ),
+           );
+         },
+       );
+     }
+   });
 
-    _items = items.reversed.toList();
+   // Ordene os itens pela data em ordem decrescente
+   _items = items.reversed.toList();
 
-    notifyListeners();
+   // Notifique os ouvintes sobre as mudanças
+   notifyListeners();
   }
+
 
   Future<void> addOrder(Cart cart, CheckoutData checkoutData) async {
   final date = DateTime.now();

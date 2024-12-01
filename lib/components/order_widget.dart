@@ -19,24 +19,35 @@ class _OrderWidgetState extends State<OrderWidget> {
     var itemsHeight = (widget.order.products.length * 45.0) + 10;
     return AnimatedContainer(
       duration: Duration(milliseconds: 300),
-      height: _expanded ? itemsHeight + 80 : 80,
+      height: _expanded ? itemsHeight + 116 : 116,
       child: Card(
         child: Column(
           children: [
             ListTile(
-              title: Text("R\$ ${widget.order.total.toStringAsFixed(2)}"),
-              subtitle: Text(
-                DateFormat('dd/MM/yyyy hh:mm').format(widget.order.date),
-              ),
-              trailing: IconButton(
-                icon: Icon(_expanded ? Icons.expand_less : Icons.expand_more),
-                onPressed: () {
-                  setState(() {
-                    _expanded = !_expanded;
-                  });
-                },
-              ),
-            ),
+  title: Column(
+    crossAxisAlignment: CrossAxisAlignment.start, // Alinha os textos à esquerda
+    children: [
+      Text(
+        widget.order.checkout!.name,
+        style: TextStyle(fontWeight: FontWeight.bold), // Nome em negrito
+      ),
+      Text(widget.order.checkout!.email),
+      Text("R\$ ${widget.order.total.toStringAsFixed(2)}"),
+    ],
+  ),
+  subtitle: Text(
+    DateFormat('dd/MM/yyyy hh:mm').format(widget.order.date),
+  ),
+  trailing: IconButton(
+    icon: Icon(_expanded ? Icons.expand_less : Icons.expand_more),
+    onPressed: () {
+      setState(() {
+        _expanded = !_expanded;
+      });
+    },
+  ),
+),
+
             AnimatedContainer(
               duration: Duration(milliseconds: 300),
               height: _expanded ? itemsHeight : 0,

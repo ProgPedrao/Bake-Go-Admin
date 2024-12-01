@@ -27,6 +27,24 @@ class CheckoutData {
     this.cardCvv,
   });
 
+  // Converte um Map (JSON) para uma instância de CheckoutData
+  factory CheckoutData.fromJson(Map<String, dynamic> json) {
+    return CheckoutData(
+      name: json['name'] ?? '',
+      email: json['email'] ?? '',
+      phone: json['phone'] ?? '',
+      address: json['address'] ?? '',
+      city: json['city'] ?? '',
+      state: json['state'] ?? '',
+      zip: json['zip'] ?? '',
+      paymentMethod: json['paymentMethod'] ?? '',
+      cardNumber: json['cardNumber'],
+      cardName: json['cardName'],
+      cardExpiry: json['cardExpiry'],
+      cardCvv: json['cardCvv'],
+    );
+  }
+
   Map<String, dynamic> toJson() {
     return {
       'name': name,
