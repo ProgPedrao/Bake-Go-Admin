@@ -5,11 +5,24 @@ import 'package:bake_and_go_admin/components/product_item.dart';
 import 'package:bake_and_go_admin/models/product_list.dart';
 import 'package:bake_and_go_admin/utils/app_routes.dart';
 
-class ProductScreen extends StatelessWidget {
+class ProductScreen extends StatefulWidget {
   const ProductScreen({super.key});
 
+  @override
+  State<ProductScreen> createState() => _ProductScreenState();
+}
+
+class _ProductScreenState extends State<ProductScreen> {
   Future<void> _refreshProducts(BuildContext context){
     return Provider.of<ProductList>(context, listen: false).loadProducts();
+  }
+  
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+
+    _refreshProducts(context);
   }
 
   @override
@@ -18,7 +31,7 @@ class ProductScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
-        title: const Text("Minha Loja"),
+        title: const Text("Produtos"),
         actions: [
           IconButton(
               onPressed: () {
